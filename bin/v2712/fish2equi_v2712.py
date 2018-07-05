@@ -39,7 +39,7 @@ def project_panorama(target_path, panorama_projection):
             input=target_path,
         )
     # Override the old image and make it a .jpg
-    os.rename(output+'.jpg', target_path)
+    os.rename(target_path, output+'.jpg')
 
 
 def main():
